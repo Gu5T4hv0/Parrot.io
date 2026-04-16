@@ -544,6 +544,8 @@ ion-icon {
     display: flex;
     flex-direction: column;
     width: 320px;
+    justify-content: center;
+    align-items: center;
 }
 .flying-m {
     /* border: 1px solid blue; */
@@ -555,24 +557,25 @@ ion-icon {
     background-repeat: no-repeat;
 }
 .social-m {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    margin-top: 450px;
+    margin-top: 0px;
 }
 .social-txt-m {
-    margin-top: 100px;
-    width: 1050px;
-    margin-right: 200px;
-    margin-left: 20px;
+    border: 1px solid green;
+    display: block;
+    margin-top: 60px;
+    width: 320px;
+    margin-left: 27px;
 }
 .parrotinhos-m {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: block;
-    background-image: url(assets/parrotinhos.svg);
+    background-image: url(assets/parrotinhos-m.svg);
     width: 950px;
-    height: 420px;
+    height: 280px;
     background-repeat: no-repeat;
 }
 
