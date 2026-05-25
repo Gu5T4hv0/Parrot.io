@@ -585,6 +585,147 @@ ion-icon {
 .reviews {
     display: none;
 }
+.reviews-m {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.top-txt-review-m {
+    width: 609.28px;
+    height: 203px;
+    display: flex;
+    gap: 18px; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 62px;
+}
+.top-txt-review-m p{
+    text-align: center;
+}
+#proof-m {
+    font-size: 12.24px;
+    color: #1CA7A6;
+    font-weight: 600;
+}
+#freeze-m {
+    font-size: 32.37px;
+    font-weight: 700;
+    width: 290px;
+    line-height: 90%;
+}
+#from-m {
+    color: #0F4C5C;
+}
+#to-m {
+    color: #1CA7A6;
+}
+#seehow-m {
+    font-size: 12.24px;
+    color: #6C757D;
+    width: 284px;
+}
+.testimonials-m {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 43px;
+    width: 100%;
+    overflow: clip;
+    margin-bottom: 69px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.test-m {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 384.5px;
+    height: 343.34px;
+    border-radius: 12.35px;
+    box-shadow: 0px 5.76px 15.48px 3.29px rgba(0, 0, 0, 0.07);
+    transition: transform 0.5s ease, filter 0.6s ease;
+}
+.content-test-m {
+    width: 307.52px;
+    height: 279.74px;
+    position: relative;
+}
+.up-test-m {
+    position: absolute;
+    z-index: 1;
+}
+.etoiles-m {
+    display: block;
+    background-image: url(assets/etoiles.svg);
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-bottom: 14px;
+}
+.main-txt-m {
+    font-size: 13.29px;
+    color: #6C757D;
+}
+#too-long-bruv-m {
+    height: 151px;
+    width: 306px;
+    overflow-y: scroll;
+}
+#too-long-bruv-m::-webkit-scrollbar {
+    width: 0px;
+}
+.profile-m {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.photo-m img {
+    width: 100%;
+}
+.profile-data-m {
+    margin-left: 17px;
+}
+.name-m {
+    font-size: 13.42px;
+}
+.languages-m {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.languages-m p {
+    color: #1CA7A6;
+    font-size: 7.46px;
+}
+.bota-hr-m {
+    height: 2px;
+    margin-top: 195px;
+}
+.hr-m {
+    background-color: #E0E0E0;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.quote-m p {
+    font-size: 14.82px;
+    color: #6C757D;
+}
+.pricing {
+    display: none;
+}
+.bottom-cta {
+    display: none;
+}
+.moi {
+    display: none;
+}
 
 
 @media (min-width: 600px) {
@@ -707,13 +848,27 @@ ion-icon {
     }
     .cta {
         width: 281px;
-        padding: 20px 13px;
         font-size: 20px;
         margin-top: 42px;
         margin-left: 215px;
+        height: 60.79px;
+        border-radius: 30px;
+        border: none;
+        background-color: #0F4C5C;
+        color: white;
+        font-weight: 400;
+        box-shadow: 0px 3.29px 3.29px 0px rgba(0, 0, 0, 0.25);
     }
-    .cta:hover {
+    .cta:hover{
+        background-color: #116d84;
+        transition: 0.2s ease;
         cursor: pointer;
+    }
+    .cta:active{
+        background-color: #083743;
+        transform: translateY(3px);
+        box-shadow: inset 1.5px 2px 12px 0.82px rgba(0, 0, 0, 0.25);
+        transition: 0.1s ease;
     }
     .hero-img {
         display: none;
@@ -726,7 +881,7 @@ ion-icon {
         display: flex;
         justify-content: center;
         position: absolute;
-        z-index: 2;
+        z-index: -2;
     }
     .hero-img-m {
         display: none;
@@ -1045,6 +1200,19 @@ ion-icon {
         display: flex;
         flex-direction: row;
         width: 1090px;
+        animation: liftUp linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 40%;
+    }
+    @keyframes liftUp {
+        from {
+            opacity: 0;
+            transform: translateY(90px); /* Start lower */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move to original position */
+        }
     }
     .nest {
         /* border: 1px solid blue; */
@@ -1087,6 +1255,9 @@ ion-icon {
         flex-direction: row;
         width: 1050px;
         position: relative;
+        animation: liftUp linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 40%;
     }
     .flying {
         /* border: 1px solid blue; */
@@ -1105,6 +1276,9 @@ ion-icon {
         flex-direction: row;
         width: 100%;
         margin-top: 450px;
+        animation: liftUp linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 40%;
     }
     .social-txt {
         margin-top: 100px;
@@ -1121,6 +1295,9 @@ ion-icon {
         background-repeat: no-repeat;
     }
     .how-it-works-m {
+        display: none;
+    }
+    .reviews-m {
         display: none;
     }
     .reviews {
@@ -1231,8 +1408,17 @@ ion-icon {
         margin-bottom: 14px;
     }
     .main-txt {
+        /* border: 1px solid rgb(255, 0, 0); */
         font-size: 16.3px;
         color: #6C757D;
+    }
+    #too-long-bruv {
+        height: 151px;
+        width: 306px;
+        overflow-y: scroll;
+    }
+    #too-long-bruv::-webkit-scrollbar {
+        width: 0px;
     }
     .profile {
         /* border: 1px solid green; */
@@ -1328,7 +1514,6 @@ ion-icon {
         transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease, filter 0.4s ease;
     }
     .afundado:hover{
-        /* here is the problem to solve claude */
         border: 2.47px solid #1CA7A6;
         transform: scale(1.015);
         box-shadow: 0px 9.88px 19.84px 3.4px rgba(0, 0, 0, 0.21);
@@ -1484,5 +1669,109 @@ ion-icon {
         margin-top: 3px;
         box-shadow: inset 1.5px 2px 12px 0.82px rgba(0, 0, 0, 0.25);
         transition: 0.1s ease;
+    }
+    .bottom-cta {
+        height: 734px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .transform-parrot {
+        transition: transform 0.5s ease, filter 0.4s ease;
+    }
+    .transform-parrot:hover .kind-parrot1 img {
+        display: none;
+        transform: scale(1.01);
+        transition: 0.5s ease;
+    }
+    .transform-parrot:hover .kind-parrot2 img {
+        display: block;
+        transform: scale(1.01);
+        transition: 0.5s ease;
+    }
+    .transform-parrot:hover .kind-parrot2{
+        transform: scale(1.01);
+        transition: 0.2s ease;
+    }
+    .kind-parrot1 img{
+        display: block;
+        transform: scale(1.01);
+        transition: 0.5s ease;
+    }
+    .kind-parrot2 img{
+        display: none;
+        transform: scale(1.01);
+        transition: 0.5s ease;
+    }
+    .invitation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 545.83px;
+    }
+    .invitation-txt {
+        text-align: center;
+        line-height: 1.05;
+        margin-top: 30px;
+    }
+    .invitation-txt p{
+        font-size: 46.82px;
+        font-weight: 700;
+        color: #0F4C5C;
+    }
+    .invitation-txt span {
+        color: #1CA7A6;
+    }
+    .house_of_cta-bottom {
+        margin-top: 40px;
+    }
+    .cta-bottom {
+        width: 315.76px;
+        height: 60.79px;
+        border-radius: 30px;
+        border: none;
+        background-color: #1FABAA;
+        color: white;
+        font-size: 22.8px;
+        font-weight: 500;
+        box-shadow: 0px 3.29px 3.29px 0px rgba(0, 0, 0, 0.25);
+    }
+    .cta-bottom:hover{
+        background-color: #1da4a4;
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+    .cta-bottom:active{
+        background-color: rgb(28, 152, 152);
+        transform: translateY(3px);
+        box-shadow: inset 1.5px 2px 12px 0.82px rgba(0, 0, 0, 0.25);
+        transition: 0.1s ease;
+    }
+    footer .moi{
+        background-color: #0F4C5C;
+        height: 31.21px;
+        display: flex;
+        align-items: center;
+    }
+    .moi {
+        display: flex;
+        justify-content: center;
+    }
+    .moi p{
+        color: white;
+        font-weight: 300;
+        font-size: 11.5px;
+    }
+    .moi a{
+        color: white;
+    }
+    .moi a:hover{
+        color: rgb(239, 239, 239);
+    }
+    .divisor_line {
+        width: 30.39px;
+        height: 1px;
+        background-color: white;
+        margin: 0px 8px 0px 8px;
     }
 }
