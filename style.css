@@ -198,7 +198,7 @@ ion-icon {
         /* border: 1px solid green; */
         width: 214px;
         height: 670px;
-        margin: 50px 0px 0px 50px;
+        margin: 50px auto 0px auto;
     }
     .top-txt1-m {
         /* border: 1px solid blue; */
@@ -247,7 +247,7 @@ ion-icon {
     }
     .points1-m {
         /* border: 1px solid purple; */
-        margin: 67px 0px 0px 14px;
+        margin: 67px auto 0px auto;
         height: 514px;
         width: 183px;
         display: flex;
@@ -359,7 +359,7 @@ ion-icon {
         /* border: 1px solid green; */
         width: 290.21px;
         height: 717.85px;
-        margin: 75px 0px 0px 42px;
+        margin: 75px auto 0px auto;
     }
     .top-txt2-m {
         /* border: 1px solid blue; */
@@ -393,7 +393,8 @@ ion-icon {
     .points2-m {
         /* border: 1px solid purple; */
         margin-top: 20px;
-        margin-left: 28px;
+        margin-left: auto;
+        margin-right: auto;
         height: 552px;
         width: 231px;
         display: flex;
