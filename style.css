@@ -7,8 +7,12 @@
   color: white; /* Text color */
   background: #FF6B6B; /* Highlight background color */
 }
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: #F8F9FA;
+    overflow-x: hidden;
 }
 /* principal */
 .principal {
@@ -496,7 +500,7 @@ ion-icon {
     margin-top: 0px;
 }
 .HIW-flex {
-    /*border: 1px solid #C43737; */
+    /* border: 1px solid #C43737; */
     margin-top: 20px;
     width: 100%;
     display: flex;
@@ -733,6 +737,282 @@ ion-icon {
 }
 .moi {
     display: none;
+}
+/* ── PRICING MOBILE ── */
+.pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.top-txt-pricing {
+    width: 315px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.top-txt-pricing p {
+    text-align: center;
+}
+.one-payment p {
+    font-size: 30.15px;
+    font-weight: 700;
+    color: #0F4C5C;
+    line-height: 1.05;
+}
+.choose {
+    width: 280px;
+}
+.choose p {
+    font-size: 10.77px;
+    color: #6C757D;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.afundado {
+    background-color: #ffffff;
+    width: 315.11px;
+    height: 330.19px;
+    border-radius: 5.89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.62px solid #1CA7A6;
+    box-shadow: 0px 6.46px 12.98px 2.22px rgba(0, 0, 0, 0.21);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+.afundado-ct {
+    width: 249.93px;
+    height: 282.43px;
+}
+.opt-title {
+    font-size: 17.23px;
+    color: #0F4C5C;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.price {
+    display: flex;
+    margin-bottom: 21.6px;
+}
+.value {
+    font-size: 45.78px;
+    font-weight: 700;
+    color: #0F4C5C;
+}
+.current {
+    margin-bottom: 7.85px;
+    font-size: 8.61px;
+    font-weight: 600;
+    color: #0F4C5C;
+}
+ul {
+    list-style-image: url(assets/guaranteed.svg);
+    display: flex;
+    flex-direction: column;
+    gap: 10.46px;
+}
+#arrow {
+    list-style-image: url(assets/arrow.svg);
+}
+li {
+    font-size: 8.61px;
+    color: #0F4C5C;
+}
+.parrot_plus {
+    width: 100%;
+    height: 71.10px;
+    background-color: white;
+    border: 1.05px solid #1FABAA;
+    border-radius: 2.94px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11.77px;
+}
+.plus-ct {
+    width: 222.36px;
+    height: 49.07px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-plus img {
+    display: block;
+    width: 80px; /* placeholder space for the logo */
+    height: 18px;
+    /* actual image will fill this space */
+}
+.plus-desc {
+    width: 185.88px;
+    font-size: 9.01px;
+    color: #0F4C5C;
+}
+.decision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 31.39px;
+    gap: 3.27px;
+}
+.decision p {
+    font-size: 8.61px;
+    color: #0F4C5C;
+}
+.decision-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12.43px;
+    gap: 3.27px;
+}
+.decision-plus p {
+    font-size: 8.61px;
+    color: #0F4C5C;
+}
+.buy-button {
+    width: 100%;
+    height: 44.70px;
+    border-radius: 7.35px;
+    border: none;
+    background-color: #1FABAA;
+    color: white;
+    font-size: 17.23px;
+    font-weight: 500;
+    box-shadow: 0px 2.15px 2.15px 0px rgba(0, 0, 0, 0.25);
+    font-family: Lexend, sans-serif;
+}
+.buy-button:active {
+    background-color: rgb(28, 152, 152);
+    margin-top: 2px;
+    box-shadow: inset 1px 1.5px 8px 0.54px rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease;
+}
+.buy-button-plus {
+    width: 100%;
+    height: 44.70px;
+    border-radius: 7.35px;
+    border: none;
+    background-color: #1FABAA;
+    color: white;
+    font-size: 17.23px;
+    font-weight: 500;
+    box-shadow: 0px 2.15px 2.15px 0px rgba(0, 0, 0, 0.25);
+    font-family: Lexend, sans-serif;
+}
+.buy-button-plus:active {
+    background-color: rgb(28, 152, 152);
+    margin-top: 2px;
+    box-shadow: inset 1px 1.5px 8px 0.54px rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease;
+}
+
+/* ── BOTTOM CTA MOBILE ── */
+.bottom-cta {
+    height: 480.16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform-parrot {
+    transition: transform 0.5s ease, filter 0.4s ease;
+    /* placeholder block for the kind_parrot image */
+    width: 315.11px;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kind-parrot1 img {
+    display: block;
+    max-width: 100%;
+}
+.kind-parrot2 img {
+    display: none;
+    max-width: 100%;
+}
+.invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.invitation-txt {
+    text-align: center;
+    line-height: 1.05;
+    margin-top: 19.62px;
+}
+.invitation-txt p {
+    font-size: 30.62px;
+    font-weight: 700;
+    color: #0F4C5C;
+}
+.invitation-txt span {
+    color: #1CA7A6;
+}
+.house_of_cta-bottom {
+    margin-top: 26.16px;
+}
+.cta-bottom {
+    width: 206.51px;
+    height: 39.76px;
+    border-radius: 19.62px;
+    border: none;
+    background-color: #1FABAA;
+    color: white;
+    font-size: 14.91px;
+    font-weight: 500;
+    box-shadow: 0px 2.15px 2.15px 0px rgba(0, 0, 0, 0.25);
+    font-family: Lexend, sans-serif;
+}
+.cta-bottom:active {
+    background-color: rgb(28, 152, 152);
+    transform: translateY(2px);
+    box-shadow: inset 1px 1.5px 8px 0.54px rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease;
+}
+
+/* ── FOOTER MOBILE ── */
+footer .moi {
+    background-color: #0F4C5C;
+    height: 20.41px;
+    display: flex;
+    align-items: center;
+}
+.moi {
+    display: flex;
+    justify-content: center;
+}
+.moi p {
+    color: white;
+    font-weight: 300;
+    font-size: 7.52px;
+}
+.moi a {
+    color: white;
+}
+.moi a:hover {
+    color: rgb(239, 239, 239);
+}
+.divisor_line {
+    width: 19.88px;
+    height: 1px;
+    background-color: white;
+    margin: 0px 5.23px 0px 5.23px;
 }
 
 
