@@ -646,7 +646,7 @@ ion-icon {
     margin-bottom: 35px;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
-    padding: 20px 19px;
+    padding: 20px 16px;
     box-sizing: border-box;
 }
 .test-m {
