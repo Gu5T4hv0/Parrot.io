@@ -171,7 +171,9 @@ ion-icon {
     margin-top: 7px;
 }
 .pain-back-m {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         /* border: 1px solid blue; */
         width: 100%;
         /* height: 650px; */
