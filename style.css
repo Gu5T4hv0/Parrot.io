@@ -577,14 +577,15 @@ ion-icon {
     /* border: 1px solid green; */
     display: block;
     margin-top: 60px;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     margin-left: 27px;
 }
 .parrotinhos-m {
     /* border: 1px solid blue; */
     display: block;
     background-image: url(assets/parrotinhos-m.svg);
-    width: 950px;
+    width: 100%;
     height: 280px;
     background-repeat: no-repeat;
 }
