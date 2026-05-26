@@ -496,7 +496,7 @@ ion-icon {
     margin-top: 0px;
 }
 .HIW-flex {
-    border: 1px solid #C43737;
+    /*border: 1px solid #C43737; */
     margin-top: 20px;
     width: 100%;
     display: flex;
