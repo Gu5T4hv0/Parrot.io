@@ -1684,7 +1684,7 @@ footer .moi {
         50%{transform: scale(1, 1);}
     }
     .content-test {
-        border: 1px solid rgb(255, 0, 0);
+        /* border: 1px solid rgb(255, 0, 0); */
         width: 307.52px;
         height: 279.74px;
         position: relative;
